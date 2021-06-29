@@ -1,0 +1,99 @@
+* {
+    position: absolute;
+    box-sizing: border-box;
+    margin: 10;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    outline: none;
+    font-size: 15px;
+}
+
+body {
+    /* padding: 20px; */
+    transform: translateZ(0);
+    background-image: url("../assets/dust.png");
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 500;
+    pointer-events: none;
+}
+
+.state-empty {
+    background-color: rgb(200, 200, 200);
+    border: .1px solid rgb(150, 150, 150);
+    transition: .3s;
+}
+
+.state-full {
+    background-color: rgb(112, 135, 235);
+    border: .5px solid rgb(69, 83, 144);
+}
+
+.levelBox {
+    position: absolute;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    z-index: 100;
+    background-color: rgb(240, 240, 240);
+    color: #999999;
+    border: .5px solid rgb(150, 150, 150);
+    transition: 2.3s;
+    padding-bottom: 12%;
+    color: '#999999';
+}
+
+.levelBox:hover {
+    color: rgb(69, 83, 144);
+    background-color: rgb(200, 200, 200);
+    filter: brightness(1.3);
+    transform: scale(1.3);
+    transition: 0.3s;
+    z-index: 101;
+}
+
+.lvl-selected {
+    position: relative;
+    transition: 1.3s;
+    border-radius: 2px;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    font-size: 10px;
+    background-color: rgb(191, 203, 253);
+    font-weight: 400;
+    filter: brightness(1.3);
+    transform: scale(1.3);
+    border: .5px solid rgb(112, 135, 235);
+    z-index: 400;
+    color: rgb(69, 83, 144);
+}
+
+.box {
+    position: absolute;
+    border-radius: 2px;
+    transition: 3.3s;
+    z-index: 100;
+}
+
+.box:hover {
+    filter: brightness(1.3);
+    transform: scale(1.3);
+    transition: .1s;
+    z-index: 101;
+}
+
+#panel-medio {
+    position: absolute;
+    display: block;
+    top: 420px;
+    left: 500px;
+    width: 1234px;
+    height: auto;
+}

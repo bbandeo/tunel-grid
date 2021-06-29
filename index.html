@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tunel Grid</title>
+    <link rel='stylesheet' href='./styles/main.css'>
+   
+</head>
+
+<body>
+    <div id="container">
+        <div id="vAnterior">
+            <div id="boxes-anterior"></div>
+        </div>
+        
+    </div>
+    <script src="./config/config.js"></script>
+    <script src="./js/draw-elements.js"></script>
+    <script src="./js/functions.js"></script>
+    <script>
+
+        window.onload = () => {
+
+            genRandomPositions()
+            drawStorageInit()
+            initiateCoords()
+            drawWarehouse(0, 1)  
+        }
+        
+    </script>
+
+</body>
+
+</html>
